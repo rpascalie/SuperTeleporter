@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start Screen.unity
+    guid: 9f9a276a522699948a7bbf9a79d5d027
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 1.unity
+    guid: 58b7700f79c74fd4db9734ace237aa4d
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 2.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 3.unity
+    guid: 60600c76b93eebc4b8716e1df63a6340
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 4.unity
+    guid: 45d4aea6831c4b0408ea6428b6b04f2f
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 5.unity
+    guid: 6a179add14ed01a4cb118fc82716f330
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 1 Dark.unity
+    guid: 1fa78673609cf92469d1adb2c224c47a
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 2 Dark.unity
+    guid: 7918f50d203fe1c488233994c7a91a32
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 3 Dark.unity
+    guid: 1297b76ee20781741a9048445c6ff159
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 4 Dark wold.unity
+    guid: 5868b406add3aeb45b6cdc07f4eba2eb
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 6.unity
+    guid: caf8ff38f04685341bc390ad93e63cc0
+  - enabled: 1
+    path: Assets/Scenes/End Screen.unity
+    guid: 62444a70d3f8ffe4eacb17c4ef569bfb
+  m_configObjects: {}
