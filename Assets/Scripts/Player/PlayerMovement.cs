@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anim;
+    private PlayerLife script;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -52,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float wallCheckOffset = .2f;
     [SerializeField] private bool isWallSliding = false;
     public bool isInvincible = false;
+    [SerializeField] private bool playerDead = false;
 
     [Header("Audio")]
     [SerializeField] private AudioSource jumpSoundEffect;
@@ -66,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        script = GetComponent<PlayerLife>(); 
     }
     private void Update()
     {
@@ -75,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         canTeleportLeft = CanTeleportLeft(); // check if can teleport to the left
         canTeleportRight = CanTeleportRight(); // check if can teleport to the right
         dirX = Input.GetAxis("Horizontal"); // get horizontal movement input        
+        playerDead = script.isPlayerDead; //check if player is dead (change using event system!)
 
         if (onGround)
         {
@@ -114,7 +118,7 @@ public class PlayerMovement : MonoBehaviour
             jumpButtonHeld = false;
         }         
               
-        if (Input.GetButtonDown("Teleport") && canTeleport) // register teleport input
+        if (Input.GetButtonDown("Teleport") && canTeleport && !playerDead) // register teleport input
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, 0f, float.MaxValue));
             isInvincible = true; // invincibility for the first half of the teleport animation

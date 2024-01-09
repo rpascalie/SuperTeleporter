@@ -10,6 +10,8 @@ public class PlayerLife : MonoBehaviour
     private PlayerMovement script;
     private bool invincibility = false;
 
+    public bool isPlayerDead = false;
+
     [SerializeField] private AudioSource deathSoundEffect;
 
     private void Start()
@@ -28,6 +30,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Traps") && !invincibility)
         {
+            isPlayerDead = true;
             deathSoundEffect.Play();
             Die();
         }
