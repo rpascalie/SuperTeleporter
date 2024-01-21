@@ -24,6 +24,16 @@ public class PlayerLife : MonoBehaviour
     private void Update()
     {
         invincibility = script.isInvincible;
+
+        if (Input.GetButtonDown("Restart"))
+        {
+            RestartLevel();
+        }
+
+        if (Input.GetButtonDown("Cancel"))
+        {
+            PauseLevel();
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -45,5 +55,10 @@ public class PlayerLife : MonoBehaviour
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void PauseLevel()
+    {
+
     }
 }

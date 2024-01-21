@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             isWallSliding = false;
         }
 
-        if (onGround || onLeftWall || onRightWall)  // restore telport when on ground or on wall
+        if ((onGround || onLeftWall || onRightWall) && !isInvincible)  // restore telport when on ground or on wall
         {
             canTeleport = true;     
             sprite.color = new Color(1, 1, 1, 1); 

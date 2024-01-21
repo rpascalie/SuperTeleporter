@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Screen.unity
-    guid: 9f9a276a522699948a7bbf9a79d5d027
+    path: Assets/Scenes/Menu/Start Screen.unity
+    guid: 4c544b0b09043fb458ca309be8cadddc
   - enabled: 1
     path: Assets/Scenes/World 1/Level 1.unity
     guid: 58b7700f79c74fd4db9734ace237aa4d
@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1/Level 5.unity
     guid: 6a179add14ed01a4cb118fc82716f330
   - enabled: 1
+    path: Assets/Scenes/World 1/Level 6.unity
+    guid: 3a41af0bf8d41894eba034b36fb5f756
+  - enabled: 1
     path: Assets/Scenes/World 1/Level 1 Dark.unity
     guid: 1fa78673609cf92469d1adb2c224c47a
   - enabled: 1
@@ -33,12 +36,15 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1/Level 3 Dark.unity
     guid: 1297b76ee20781741a9048445c6ff159
   - enabled: 1
-    path: Assets/Scenes/World 1/Level 4 Dark wold.unity
+    path: Assets/Scenes/World 1/Level 4 Dark.unity
     guid: 5868b406add3aeb45b6cdc07f4eba2eb
   - enabled: 1
-    path: Assets/Scenes/World 1/Level 6.unity
+    path: Assets/Scenes/World 1/Level 5 Dark.unity
+    guid: 45444699628ecd4498084b7750fbb6d6
+  - enabled: 1
+    path: Assets/Scenes/World 1/Level 6 Dark.unity
     guid: caf8ff38f04685341bc390ad93e63cc0
   - enabled: 1
-    path: Assets/Scenes/End Screen.unity
-    guid: 62444a70d3f8ffe4eacb17c4ef569bfb
+    path: Assets/Scenes/Menu/End Screen.unity
+    guid: e40bc4a69ece18e4581a6d4e15f9bd60
   m_configObjects: {}
