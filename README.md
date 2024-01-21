@@ -8,7 +8,7 @@ The player can also jump, double jump and wall jump. There is no controller supp
 I am still working on it and plan to add more levels playing around the teleportation. 
 It is my first somewhat complete Unity game, I appreciate any feedback!
 
-I used the following assets as place holders until I add my own:
+I used the following assets as placeholders until I add my own:
 
 - [2D Casual UI HD](https://assetstore.unity.com/packages/2d/gui/icons/2d-casual-ui-hd-82080)
 
