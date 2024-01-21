@@ -3,7 +3,7 @@
 Hello!
 
 This is a simple 2D platformer where the player has a teleport ability and can be played [here](https://rpascalie.github.io/SuperTeleporter/).
-The player can also jump, double jump and wall jump. The is no controller support.
+The player can also jump, double jump and wall jump. There is no controller support.
 
 I am still working on it and plan to add more levels playing around the teleportation. 
 It is my first somewhat complete Unity game, I appreciate any feedback!
